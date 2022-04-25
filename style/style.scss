@@ -118,8 +118,39 @@ body {
 
 .sub-menu {
     position: absolute;
+    top: 35px;
     list-style-type: none;
     display: none;
+    background-color: #fff;
+    padding: 0.8rem 0.9rem;
+    border-radius: 10px;
+    box-shadow: 1px 15px 30px 1px rgba(34, 60, 80, 0.2);
+
+    &--left {
+        left: -40px;
+    }
+
+    &__link {
+        padding: 0.3rem 0;
+        position: relative;
+
+        &:before {
+            transition: all 0.2s ease;
+            position: absolute;
+            bottom: 2px;
+            display: block;
+            content: '';
+            height: 1px;
+            width: 0%;
+            background-color: $almostBlack;
+        }
+    }
+}
+
+.sub-menu__link:hover {
+    &:before {
+        width: 100%;
+    }
 }
 
 .attribution {
@@ -129,4 +160,15 @@ body {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+.sub-menu--active {
+    display: block;
+}
+
+.icon--active {
+    &:before {
+        transition: all 0.2s ease;
+        transform: rotate(180deg);
+    }
 }
