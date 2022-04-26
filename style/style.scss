@@ -76,19 +76,19 @@ body {
 
     &__login {
         border: 2px solid transparent;
+        color: $mediumGray;
 
         &:hover {
-            color: $mediumGray;
+            color: $almostBlack;
         }
     }
 
     &__register {
-        border: 2px solid transparent;
-        border-radius: 10%;
+        border: 2px solid $mediumGray;
+        border-radius: 15px;
 
         &:hover {
             border: 2px solid $almostBlack;
-            border-radius: 15px;
         }
     }
 }
@@ -171,4 +171,55 @@ body {
         transition: all 0.2s ease;
         transform: rotate(180deg);
     }
+}
+
+
+.inner {
+    margin-top: 50px;
+
+    &__body {
+        display: flex;
+        padding: 0 90px;
+        justify-content: space-between;
+    }
+
+    &__text {
+        padding-top: 100px;
+        flex-basis: 50%;
+        color: $almostBlack;
+    }
+
+    &__title {
+        font-size: 5rem;
+        font-weight: 700;
+    }
+
+    &__sub-title {
+        padding-right: 150px;
+        line-height: 22px;
+        margin-top: 50px;
+        font-size: 1.12rem;
+        font-weight: 500;
+        color: $mediumGray;
+    }
+
+    &__link {
+        margin-top: 70px;
+        display: inline-block;
+        padding: 0.8rem 1.5rem;
+        background: #000;
+        text-decoration: none;
+        border-radius: 15px;
+        color: #fff;
+
+    }
+
+    &__photo-container {
+        flex-basis: 40%;
+    }
+
+    &__photo {
+        width: 100%;
+    }
+
 }
