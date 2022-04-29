@@ -15,6 +15,19 @@ html {
     font-size: 18px;
 }
 
+.lock {
+    overflow-y: hidden;
+}
+
+
+.shadowing {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.375);
+}
+
 
 $almostWhite: hsl(0, 0%, 98%);
 $mediumGray: hsl(0, 0%, 41%);
@@ -59,6 +72,45 @@ body {
 
     &__menu {
         flex-grow: 1;
+    }
+
+    &__burger {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: block;
+        width: 40px;
+        height: 2px;
+        z-index: 10;
+        background: #000;
+
+        &:before,
+        &:after {
+            position: absolute;
+            display: block;
+            content: "";
+            width: 100%;
+            height: 120%;
+            background-color: #000;
+        }
+
+        &:before {
+            top: -10px;
+        }
+
+        &:after {
+            top: 10px;
+
+        }
+
+        // burger--active
+        // &:before {
+        //     transform: rotate(45deg);
+        // }
+
+        // &:after {
+        //     transform: rotate(-45deg);
+        // }
     }
 
     &__reg {
@@ -116,26 +168,6 @@ body {
     }
 }
 
-@media (max-width:750px) {
-    .header {
-        &__logo {
-            display: none;
-
-        }
-
-        &__reg {
-            display: none;
-        }
-    }
-
-    .menu {
-        &__list {
-            position: absolute;
-            flex-direction: column;
-        }
-    }
-}
-
 .sub-menu {
     position: absolute;
     top: 35px;
@@ -167,6 +199,45 @@ body {
     }
 }
 
+
+@media (max-width:750px) {
+    .shadowing {
+        display: block;
+    }
+
+    .header {
+
+        &__reg {
+            display: none;
+        }
+    }
+
+    .menu {
+        &__list {
+            background-color: #fff;
+            position: absolute;
+            flex-direction: column;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: 0;
+            padding: 40px 20px;
+            align-items: flex-start;
+        }
+
+        &__link {
+            padding: 10px 0;
+        }
+    }
+
+    .sub-menu {
+        position: static;
+        box-shadow: none;
+
+    }
+}
+
+
 .sub-menu__link:hover {
     &:before {
         width: 100%;
@@ -192,7 +263,6 @@ body {
         transform: rotate(180deg);
     }
 }
-
 
 .inner {
     margin-top: 50px;
@@ -253,7 +323,7 @@ body {
     }
 
     .inner__body {
-        padding: 0 10px;
+        padding: 0;
         justify-content: space-around;
     }
 
