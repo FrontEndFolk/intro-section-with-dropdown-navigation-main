@@ -1,5 +1,7 @@
 "use strict";
 
+// dropdown menu
+
 let dropDownMenuArr = document.querySelectorAll('.dropdown');
 dropDownMenuArr = Array.from(dropDownMenuArr);
 let second = 0;
@@ -35,4 +37,17 @@ document.addEventListener('keyup', (event) => {
     }
 })
 
+// burger menu
 
+let burgerButton = document.querySelector('.header__burger');
+let burgerMenu = document.querySelector('.menu__list');
+console.log(burgerButton, burgerMenu)
+let body = document.body;
+let shadow = document.querySelector('.shadowing');
+
+burgerButton.addEventListener('click', () => {
+    burgerButton.classList.toggle('header__burger--active');
+    burgerMenu.classList.toggle('menu__list--active');
+    body.classList.toggle('lock');
+    shadow.classList.toggle('shadowing--active');
+});
