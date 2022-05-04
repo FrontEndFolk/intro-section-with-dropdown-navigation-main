@@ -27,10 +27,10 @@ Users should be able to:
 
 ### Screenshot
 
-[laptop](screenshots\FireShot Capture 001 - Frontend Mentor - Intro section with dropdown navigation_ - the-beginner-2.github.io.png)
-[mobile](screenshots\FireShot Capture 002 - Frontend Mentor - Intro section with dropdown navigation_ - the-beginner-2.github.io.png)
-[laptopMenu](screenshots\FireShot Capture 006 - Frontend Mentor - Intro section with dropdown navigation_ - the-beginner-2.github.io.png)
-[mobileMenu](screenshots\FireShot Capture 004 - Frontend Mentor - Intro section with dropdown navigation_ - the-beginner-2.github.io.png)
+[laptop](//screenshots/FireShot%20Capture%20001%20-%20Frontend%20Mentor%20-%20Intro%20section%20with%20dropdown%20navigation_%20-%20the-beginner-2.github.io.png)
+[mobile](//screenshots/FireShot%20Capture%20002%20-%20Frontend%20Mentor%20-%20Intro%20section%20with%20dropdown%20navigation_%20-%20the-beginner-2.github.io.png)
+[laptopMenu](//screenshots/FireShot%20Capture%20006%20-%20Frontend%20Mentor%20-%20Intro%20section%20with%20dropdown%20navigation_%20-%20the-beginner-2.github.io.png)
+[mobileMenu](//screenshots/FireShot%20Capture%20004%20-%20Frontend%20Mentor%20-%20Intro%20section%20with%20dropdown%20navigation_%20-%20the-beginner-2.github.io.png)
 
 ### Links
 
